@@ -41,6 +41,10 @@ const creatClient = (client) => {
     dbClient.push (client)
     setLocalStorage(dbClient)
 }
+// Validando os campos
+const isValidFields = () => {
+   return document.getElementById('form').reportValidity()
+}
  
 //Interação com o layout
 const saveClient = () => {
